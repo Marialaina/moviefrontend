@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import AllMovies from './pages/allMovies';
 import SingleMovie from './pages/singleMovie';
 import Form from './pages/Form';
-import Movie from './components/movie';
+// import Movie from './components/movie';
 import './App.css';
 
 //Import React and hooks
@@ -46,7 +45,7 @@ const addMovies = async (newMovie) => {
     },
     body: JSON.stringify(newMovie),
   })
-  getMovies(n);
+  getMovies();
 }
 
 const nullMovie = {
@@ -133,7 +132,7 @@ useEffect(() => {
             edit={getTargetMovies}
             deleteMovies={deleteMovies}
     />
-  )}
+            )}
 />
       </Switch>
     </div>

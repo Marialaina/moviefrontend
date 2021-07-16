@@ -25,7 +25,7 @@ const Form = ({ initialMovie, handleSubmit, buttonLabel, history}) => {
 
 
     return (
-        <form  style={formStyle}
+        <form style={formStyle}
         onSubmit={handleSubmisson}>
         <input
         style={newStyle}
