@@ -46,7 +46,7 @@ const addMovies = async (newMovie) => {
     },
     body: JSON.stringify(newMovie),
   })
-  getMovies();
+  getMovies(n);
 }
 
 const nullMovie = {
