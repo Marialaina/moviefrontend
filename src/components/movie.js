@@ -14,7 +14,7 @@ const Movie = ({movie}) => {
         return (
             <div style={div}>
                 <Link to={`/movie/${movie.id}`}>
-                    <h1>{movie.movie}</h1>
+                    <h1>{movie.title}</h1>
                 </Link>
                 <h2>{movie.wheretowatch}</h2>
             </div>

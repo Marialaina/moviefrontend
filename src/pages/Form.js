@@ -31,8 +31,8 @@ const Form = ({ initialMovie, handleSubmit, buttonLabel, history}) => {
         style={newStyle}
           type="text"
           onChange={handleChange}
-          value={formData.movie}
-          name="movie"
+          value={formData.title}
+          name="title"
         />
         <input
         style={newStyle}

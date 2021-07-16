@@ -26,7 +26,7 @@ const SingleMovie = ({movies, match, edit, deleteMovies}) => {
   
     return (
       <div style={div}>
-        <h1>{movie.movie}</h1>
+        <h1>{movie.title}</h1>
         <h2>{movie.wheretowatch}</h2>
         <button style={button} onClick={(event) => edit(movie)}>Edit</button>
         <button style={button} onClick={(event) => deleteMovies(movie)}>Delete</button>

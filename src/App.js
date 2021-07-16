@@ -49,8 +49,9 @@ const addMovies = async (newMovie) => {
 }
 
 const nullMovie = {
-  subject: "",
-  details: ""
+  title: "",
+  wheretowatch: "",
+  rating: ""
 }
 const [targetMovies, setTargetMovies] = useState(nullMovie)
 
