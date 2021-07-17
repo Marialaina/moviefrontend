@@ -11,27 +11,29 @@ const SingleMovie = ({movies, match, edit, deleteMovies}) => {
     ////////////////////
     // Styles
     ///////////////////
-    const div = {
-      textAlign: "center",
-      border: "3px solid green",
-      width: "80%",
-      margin: "30px auto",
-      background: "#4777",
-      color: "#e87ac1"
-    };
+    // const div = {
+    //   textAlign: "center",
+    //   border: "3px solid green",
+    //   width: "80%",
+    //   margin: "30px auto",
+    //   background: "#4777",
+    //   color: "#e87ac1"
+    // };
   
-    const button = {
-       margin: "10px",  
-    }
+    // const button = {
+    //    margin: "10px",  
+    // }
   
     return (
-      <div style={div}>
+      <div 
+    //   style={div}
+      >
         <h1>{movie.title}</h1>
         <h2>{movie.wheretowatch}</h2>
-        <button style={button} onClick={(event) => edit(movie)}>Edit</button>
-        <button style={button} onClick={(event) => deleteMovies(movie)}>Delete</button>
+        <button  onClick={(event) => edit(movie)}>Edit</button>
+        <button  onClick={(event) => deleteMovies(movie)}>Delete</button>
         <Link to="/">
-          <button style={button}>Home</button>
+          <button>Home</button>
         </Link>
       </div>
     );

@@ -1,6 +1,8 @@
 import AllMovies from './pages/allMovies';
 import SingleMovie from './pages/singleMovie';
 import Form from './pages/Form';
+import { Typography, makeStyles } from '@material-ui/core';
+import {Button} from '@material-ui/core'
 // import Movie from './components/movie';
 import './App.css';
 
@@ -17,10 +19,14 @@ const App = (props) => {
     color: "black",
   }
 
-  const button ={
-    backgroundColor: "#64a764",
-    display: "block",
-    margin: "auto"
+  const buttonT = {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
   }
 
 
@@ -86,8 +92,10 @@ useEffect(() => {
 
   return (
     <div className="App">
-     <h1 style={h1}>My Movie List</h1>
-     <Link to="/new"><button style={button}>add a movie</button></Link>
+     <Typography variant="h1" styles={h1}>My Movie List</Typography>
+     <Link to="/new">
+       <Button  styles={buttonT} color="primary">add a movie</Button>
+       </Link>
       <Switch>
         <Route
           exact
