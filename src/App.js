@@ -92,7 +92,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-     <Typography variant="h1" styles={h1}>My Movie List</Typography>
+     <Typography variant="h1">My Movie List</Typography>
      <Link to="/new">
        <Button  styles={buttonT} color="primary">add a movie</Button>
        </Link>

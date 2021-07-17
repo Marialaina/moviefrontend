@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { Typography, makeStyles } from '@material-ui/core';
+import TextField from "@material-ui/core/TextField"
 
 const Form = ({ initialMovie, handleSubmit, buttonLabel, history}) => {
     const [formData, setFormData] = useState(initialMovie);
@@ -12,31 +14,27 @@ const Form = ({ initialMovie, handleSubmit, buttonLabel, history}) => {
         handleSubmit(formData);
         history.push("/");
     }
-    // const newStyle = {
-    //     background: "#4777",
-    //     color: "#e87ac1"
-    // }
-
-    // const formStyle = {
-    //     display:"inline-block",
-    //     width: "70%",
-    //     height: "50%"
-    // }
+    const newStyle = {
+        background: "#4777",
+        color: "#e87ac1"
+    }
 
 
     return (
         
         <form 
         onSubmit={handleSubmisson}>
-        <input
-        // style={newStyle}
+        <TextField
+        style={newStyle}
+        label="movie"
           type="text"
           onChange={handleChange}
           value={formData.title}
           name="title"
         />
-        <input
-        // style={newStyle}
+        <TextField
+        style={newStyle}
+        label="where to watch"
           type="text"
           onChange={handleChange}
           value={formData.wheretowatch}

@@ -11,22 +11,22 @@ const SingleMovie = ({movies, match, edit, deleteMovies}) => {
     ////////////////////
     // Styles
     ///////////////////
-    // const div = {
-    //   textAlign: "center",
-    //   border: "3px solid green",
-    //   width: "80%",
-    //   margin: "30px auto",
-    //   background: "#4777",
-    //   color: "#e87ac1"
-    // };
+    const div = {
+      textAlign: "center",
+      border: "3px solid green",
+      width: "80%",
+      margin: "30px auto",
+      background: "#4777",
+      color: "#e87ac1"
+    };
   
-    // const button = {
-    //    margin: "10px",  
-    // }
+    const button = {
+       margin: "10px",  
+    }
   
     return (
       <div 
-    //   style={div}
+      style={div}
       >
         <h1>{movie.title}</h1>
         <h2>{movie.wheretowatch}</h2>
